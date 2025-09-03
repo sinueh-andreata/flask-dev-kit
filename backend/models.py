@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import jsonify
 from config import app, db
 from sqlalchemy import Column, Integer, String
 from sqlalchemy import MEDIUMBLOB
