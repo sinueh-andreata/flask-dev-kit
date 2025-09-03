@@ -6,7 +6,7 @@ from sqlalchemy import MEDIUMBLOB
 class Usuario(db.Model):
     __tablename__ = 'usuarios'
 
-    id = Column(Integer, primary_key=True)
+    usuario_id = Column(Integer, primary_key=True)
     nome = Column(String(50), nullable=False)
     cpf = Column(String(11), unique=True, nullable=False)
     senha = Column(String(100), nullable=False)
@@ -22,7 +22,7 @@ class Usuario(db.Model):
 class Produto(db.Model):
     __tablename__ = 'produtos'
 
-    id = Column(Integer, primary_key=True)
+    produto_id = Column(Integer, primary_key=True)
     nome = Column(String(100), nullable=False)
     descricao = Column(String(255), nullable=True)
     preco = Column(Integer, nullable=False)
